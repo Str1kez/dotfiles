@@ -31,7 +31,7 @@
 
 - [Fd](https://github.com/sharkdp/fd) Быстрый нечеткий поиск файлов и каталогов
 - [Bat](https://github.com/sharkdp/bat) Быстрый и красивый просмотр текстовых файлов
-- [Xh](https://github.com/sharkdp/xh) Быстрый и информативный HTTP-клиент
+- [Xh](https://github.com/ducaale/xh) Быстрый и информативный HTTP-клиент
 - [Ripgrep](https://github.com/BurntSushi/ripgrep) Быстрый и мощный поиск текста
 - [Procs](https://github.com/dalance/procs) Быстрый и кастомизируемый просмотр процессов
 - [Eza](https://github.com/eza-community/eza) Замена ls, красивее и функциональнее
