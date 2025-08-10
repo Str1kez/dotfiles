@@ -1,0 +1,33 @@
+[
+    {
+        "context": "Editor && (vim_mode == insert || vim_mode == operator)",
+        "bindings": {
+            "j k": ["workspace::SendKeystrokes", "escape cmd-s"]
+        }
+    },
+    {
+        "context": "Editor && vim_mode == normal && !menu",
+        "bindings": {
+            "g n": ["workspace::SendKeystrokes", "alt-cmd-right"],
+            "g c b": "pane::GoBack",
+            "g c c": ["workspace::SendKeystrokes", "g c l"],
+            "g c f": "pane::GoForward",
+            "g p": "pane::ActivatePreviousItem",
+            "g w": "pane::CloseActiveItem",
+            "g f": "editor::Format",
+            "g i": "editor::GoToImplementation",
+            ", r": "editor::Rename",
+            ", f": "file_finder::Toggle",
+            ", s": "outline::Toggle",
+            "space e": "editor::Hover",
+            "K": "editor::Hover",
+            "cmd-.": "editor::ShowCompletions"
+        }
+    },
+    {
+        "context": "Editor && vim_mode != insert && !menu",
+        "bindings": {
+            ", g": "pane::DeploySearch"
+        }
+    }
+]

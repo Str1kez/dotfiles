@@ -1,0 +1,135 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+    // AI
+    "outline_panel": {
+        "dock": "right"
+    },
+    "context_servers": {
+        "mcp-server-context7": {
+            "source": "extension",
+            "enabled": true,
+            "settings": {
+                "default_minimum_tokens": "10000"
+            }
+        }
+    },
+    "agent": {
+        "play_sound_when_agent_done": true,
+        "use_modifier_to_send": false,
+        "always_allow_tool_actions": false,
+        "single_file_review": false,
+        "default_profile": "ask",
+        "default_model": {
+            "provider": "zed.dev",
+            "model": "claude-sonnet-4-thinking"
+        }
+    },
+    "features": {
+        "edit_prediction_provider": "zed"
+    },
+    "proxy": "socks5://127.0.0.1:25344",
+
+    // general
+    "icon_theme": "Material Icon Theme",
+    "base_keymap": "VSCode",
+    "theme": "Cursor Dark",
+    "hide_mouse": "on_typing",
+    "buffer_font_size": 13.5,
+    "autosave": "on_focus_change",
+    "current_line_highlight": "gutter",
+    "buffer_font_family": "JetBrainsMono Nerd Font Mono",
+    "buffer_font_features": {
+        // Disable ligatures:
+        "calt": false
+    },
+    "tab_size": 4,
+    "preferred_line_length": 120,
+    "tabs": {
+        "git_status": true,
+        "file_icons": true
+    },
+    "preview_tabs": {
+        "enable_preview_from_file_finder": true,
+        "enable_preview_from_code_navigation": true
+    },
+    "indent_guides": {
+        "enabled": true,
+        "coloring": "indent_aware"
+    },
+
+    // vim
+    "vim_mode": true,
+    "vim": {
+        "use_system_clipboard": "never"
+    },
+
+    // languages
+    "lsp": {
+        "golangci-lint": {
+            "initialization_options": {
+                "command": [
+                    "golangci-lint",
+                    "run",
+                    "--output.json.path=stdout",
+                    "--issues-exit-code=1",
+                    "--show-stats=false"
+                ]
+            }
+        },
+        "pyright": {
+            "settings": {
+                "python.analysis": {
+                    "diagnosticMode": "workspace",
+                    "typeCheckingMode": "standard"
+                },
+                "python": {
+                    "pythonPath": ".venv/bin/python"
+                }
+            }
+        },
+        "ruff": {
+            "initialization_options": {
+                "settings": {
+                    // Ruff server settings goes here
+                    "lineLength": 120,
+                    "lint": {
+                        "isort": {
+                            "combineAsImports": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "languages": {
+        "Go": {
+            "language_servers": ["gopls", "golangci-lint"]
+        },
+        "Python": {
+            "language_servers": ["pyright", "ruff"],
+            "formatter": [
+                {
+                    "code_actions": {
+                        "source.organizeImports.ruff": true,
+                        "source.fixAll.ruff": true
+                    }
+                },
+                {
+                    "language_server": {
+                        "name": "ruff"
+                    }
+                }
+            ]
+        },
+        "YAML": {
+            "tab_size": 2
+        }
+    }
+}

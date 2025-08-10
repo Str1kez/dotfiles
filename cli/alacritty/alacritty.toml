@@ -1,0 +1,347 @@
+# now gruvbox-dark
+[colors.bright]
+black = "#928374"
+blue = "#83a598"
+cyan = "#8ec07c"
+green = "#b8bb26"
+magenta = "#d3869b"
+red = "#fb4934"
+white = "#ebdbb2"
+yellow = "#fabd2f"
+
+[colors.normal]
+black = "#282828"
+blue = "#458588"
+cyan = "#689d6a"
+green = "#98971a"
+magenta = "#b16286"
+red = "#cc241d"
+white = "#a89984"
+yellow = "#d79921"
+
+[colors.primary]
+background = "#1d2021"
+foreground = "#ebdbb2"
+
+[cursor.style]
+shape = "Beam"
+
+[font]
+size = 14
+
+[font.bold]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Light Italic"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Regular"
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "N"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = " "
+key = "Space"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0015"
+key = "Back"
+mods = "Super"
+
+[[keyboard.bindings]]
+chars = "\u001Bb"
+key = "Left"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u001Bf"
+key = "Right"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u001BOH"
+key = "Left"
+mode = "AppCursor"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001BOF"
+key = "Right"
+mode = "AppCursor"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001BR"
+key = "R"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "ToggleFullscreen"
+key = "F11"
+
+# [schemes.atlantis.bright]
+# black = "0x828a9a"
+# blue = "0x72cce8"
+# cyan = "0xf69c5e"
+# green = "0x9dd274"
+# magenta = "0xba9cf3"
+# red = "0xff6578"
+# white = "0xe1e3e4"
+# yellow = "0xeacb64"
+#
+# [schemes.atlantis.normal]
+# black = "0x181a1c"
+# blue = "0x72cce8"
+# cyan = "0xf69c5e"
+# green = "0x9dd274"
+# magenta = "0xba9cf3"
+# red = "0xff6578"
+# white = "0xe1e3e4"
+# yellow = "0xeacb64"
+#
+# [schemes.atlantis.primary]
+# background = "0x2a2f38"
+# foreground = "0xe1e3e4"
+#
+# [schemes.ayudark.bright]
+# black = "0x686868"
+# blue = "0x59C2FF"
+# cyan = "0x95E6CB"
+# green = "0xC2D94C"
+# magenta = "0xFFEE99"
+# red = "0xF07178"
+# white = "0xFFFFFF"
+# yellow = "0xFFB454"
+#
+# [schemes.ayudark.normal]
+# black = "0x01060E"
+# blue = "0x53BDFA"
+# cyan = "0x90E1C6"
+# green = "0x91B362"
+# magenta = "0xFAE994"
+# red = "0xEA6C73"
+# white = "0xC7C7C7"
+# yellow = "0xF9AF4F"
+#
+# [schemes.ayudark.primary]
+# background = "0x0A0E14"
+# foreground = "0xB3B1AD"
+#
+# [schemes.doom-one.bright]
+# black = "#5b6268"
+# blue = "#3071db"
+# cyan = "#46d9ff"
+# green = "#4db5bd"
+# magenta = "#a9a1e1"
+# red = "#da8548"
+# white = "#dfdfdf"
+# yellow = "#ecbe7b"
+#
+# [schemes.doom-one.cursor]
+# cursor = "#528bff"
+# text = "CellBackground"
+#
+# [schemes.doom-one.normal]
+# black = "#1c1f24"
+# blue = "#51afef"
+# cyan = "#5699af"
+# green = "#98be65"
+# magenta = "#c678dd"
+# red = "#ff6c6b"
+# white = "#202328"
+# yellow = "#da8548"
+#
+# [schemes.doom-one.primary]
+# background = "#282c34"
+# foreground = "#bbc2cf"
+#
+# [schemes.doom-one.selection]
+# background = "#3e4451"
+# text = "CellForeground"
+#
+# [schemes.dracula.bright]
+# black = "#7989AD"
+# blue = "#d6acff"
+# cyan = "#a4ffff"
+# green = "#69ff94"
+# magenta = "#ff92df"
+# red = "#ff6e6e"
+# white = "#ffffff"
+# yellow = "#ffffa5"
+#
+# [schemes.dracula.cursor]
+# cursor = "CellForeground"
+# text = "CellBackground"
+#
+# [schemes.dracula.footer_bar]
+# background = "#282a36"
+# foreground = "#f8f8f2"
+#
+# [schemes.dracula.hints.end]
+# background = "#282a36"
+# foreground = "#f1fa8c"
+#
+# [schemes.dracula.hints.start]
+# background = "#f1fa8c"
+# foreground = "#282a36"
+#
+# [schemes.dracula.line_indicator]
+# background = "None"
+# foreground = "None"
+#
+# [schemes.dracula.normal]
+# black = "#565E6F"
+# blue = "#bd93f9"
+# cyan = "#8be9fd"
+# green = "#50fa7b"
+# magenta = "#ff79c6"
+# red = "#ff5555"
+# white = "#f8f8f2"
+# yellow = "#f1fa8c"
+#
+# [schemes.dracula.primary]
+# background = "#282a36"
+# bright_foreground = "#ffffff"
+# foreground = "#f8f8f2"
+#
+# [schemes.dracula.search.focused_match]
+# background = "#ffb86c"
+# foreground = "#44475a"
+#
+# [schemes.dracula.search.matches]
+# background = "#50fa7b"
+# foreground = "#44475a"
+#
+# [schemes.dracula.selection]
+# background = "#44475a"
+# text = "CellForeground"
+#
+# [schemes.dracula.vi_mode_cursor]
+# cursor = "CellForeground"
+# text = "CellBackground"
+#
+# [schemes.gruvbox-dark.bright]
+# black = "#928374"
+# blue = "#83a598"
+# cyan = "#8ec07c"
+# green = "#b8bb26"
+# magenta = "#d3869b"
+# red = "#fb4934"
+# white = "#ebdbb2"
+# yellow = "#fabd2f"
+#
+# [schemes.gruvbox-dark.normal]
+# black = "#282828"
+# blue = "#458588"
+# cyan = "#689d6a"
+# green = "#98971a"
+# magenta = "#b16286"
+# red = "#cc241d"
+# white = "#a89984"
+# yellow = "#d79921"
+#
+# [schemes.gruvbox-dark.primary]
+# background = "#1d2021"
+# foreground = "#ebdbb2"
+#
+# [schemes.maia.bright]
+# black = "0x82878b"
+# blue = "0x78cee9"
+# cyan = "0xf3a96a"
+# green = "0x9cd57b"
+# magenta = "0xbaa0f8"
+# red = "0xf76c7c"
+# white = "0xe1e2e3"
+# yellow = "0xe3d367"
+#
+# [schemes.maia.normal]
+# black = "0x1c1e1f"
+# blue = "0x78cee9"
+# cyan = "0xf3a96a"
+# green = "0x9cd57b"
+# magenta = "0xbaa0f8"
+# red = "0xf76c7c"
+# white = "0xe1e2e3"
+# yellow = "0xe3d367"
+#
+# [schemes.maia.primary]
+# background = "0x273136"
+# foreground = "0xe1e2e3"
+#
+# [schemes.nord.bright]
+# black = "#4c566a"
+# blue = "#81a1c1"
+# cyan = "#8fbcbb"
+# green = "#a3be8c"
+# magenta = "#b48ead"
+# red = "#bf616a"
+# white = "#eceff4"
+# yellow = "#ebcb8b"
+#
+# [schemes.nord.cursor]
+# cursor = "#d8dee9"
+# text = "#2e3440"
+#
+# [schemes.nord.dim]
+# black = "#373e4d"
+# blue = "#68809a"
+# cyan = "#6d96a5"
+# green = "#809575"
+# magenta = "#8c738c"
+# red = "#94545d"
+# white = "#aeb3bb"
+# yellow = "#b29e75"
+#
+# [schemes.nord.footer_bar]
+# background = "#434c5e"
+# foreground = "#d8dee9"
+#
+# [schemes.nord.normal]
+# black = "#435D98"
+# blue = "#81a1c1"
+# cyan = "#88c0d0"
+# green = "#a3be8c"
+# magenta = "#b48ead"
+# red = "#bf616a"
+# white = "#e5e9f0"
+# yellow = "#ebcb8b"
+#
+# [schemes.nord.primary]
+# background = "#2e3440"
+# dim_foreground = "#a5abb6"
+# foreground = "#d8dee9"
+#
+# [schemes.nord.search]
+# background = "#88c0d0"
+#
+# [schemes.nord.search.matches]
+# foreground = "CellBackground"
+#
+# [schemes.nord.selection]
+# background = "#4c566a"
+# text = "CellForeground"
+#
+# [schemes.nord.vi_mode_cursor]
+# cursor = "#d8dee9"
+# text = "#2e3440"
+
+[window]
+decorations = "Buttonless"
+dynamic_padding = true
+opacity = 0.9
+
+[window.dimensions]
+columns = 133
+lines = 40
+
+[window.padding]
+x = 0
+y = 0
