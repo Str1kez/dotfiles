@@ -108,7 +108,7 @@
         "ruff": {
             "binary": {
                 "path": ".venv/bin/ruff",
-                "args": ["server"]
+                "arguments": ["server"]
             },
             "initialization_options": {
                 "settings": {
