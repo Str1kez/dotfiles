@@ -1,0 +1,41 @@
+[
+    // {
+    //     "context": "Editor && edit_prediction_conflict",
+    //     "bindings": {
+    //         "super-tab": "editor::AcceptEditPrediction" // Example of a modified keybinding
+    //     }
+    // },
+    {
+        "context": "Editor && (vim_mode == insert || vim_mode == operator)",
+        "bindings": {
+            "j k": ["workspace::SendKeystrokes", "escape ctrl-s"],
+            "ctrl-v": "editor::Paste"
+        }
+    },
+    {
+        "context": "Editor && vim_mode == normal && !menu",
+        "bindings": {
+            "g c b": "pane::GoBack",
+            "g c f": "pane::GoForward",
+            "g c c": ["workspace::SendKeystrokes", "g c l"],
+            "g p": "pane::ActivatePreviousItem",
+            "g n": "pane::ActivateNextItem",
+            "g w": "pane::CloseActiveItem",
+            "g f": "editor::Format",
+            ", r": "editor::Rename",
+            ", f": "file_finder::Toggle",
+            ", g": "pane::DeploySearch",
+            "space e": "editor::Hover",
+            "K": "editor::Hover",
+            "cmd-.": "editor::ShowCompletions"
+        }
+    },
+    {
+        "context": "vim_mode == visual",
+        "bindings": {
+            "ctrl-c": "editor::Copy",
+            ", g": "pane::DeploySearch"
+        }
+    }
+]
+
