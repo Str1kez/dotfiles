@@ -1,11 +1,13 @@
 # Requirements
 
 ## basedpyright
+
 ```bash
-npm i -g basedpyright
+brew install basedpyright
 ```
 
 ## .gitlab-ci.yml lsp
+
 ```bash
 cargo install gitlab-ci-ls
 ```

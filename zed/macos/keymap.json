@@ -1,5 +1,11 @@
 [
     {
+        "context": "Editor && edit_prediction_conflict",
+        "bindings": {
+            "cmd-l": "editor::AcceptEditPrediction"
+        }
+    },
+    {
         "context": "Editor && (vim_mode == insert || vim_mode == operator)",
         "bindings": {
             "j k": ["workspace::SendKeystrokes", "escape cmd-s"]

@@ -202,6 +202,41 @@
       },
       "dev": false
     },
+    "gitlab-ci-ls": {
+      "manifest": {
+        "id": "gitlab-ci-ls",
+        "name": "gitlab-ci-ls",
+        "version": "1.0.1",
+        "schema_version": 1,
+        "description": "Language Server for gitlab-ci",
+        "repository": "https://github.com/tzabbi/zed-gitlab-ci-ls",
+        "authors": [
+          "Tom Zaspel <tom@zaspel.it>"
+        ],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.5.0"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {
+          "gitlab-ci": {
+            "language": "YAML",
+            "languages": [],
+            "language_ids": {},
+            "code_action_kinds": null
+          }
+        },
+        "context_servers": {},
+        "slash_commands": {},
+        "indexed_docs_providers": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
     "go-snippets": {
       "manifest": {
         "id": "go-snippets",
