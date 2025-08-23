@@ -34,7 +34,7 @@
     "features": {
         "edit_prediction_provider": "zed"
     },
-    "proxy": "socks5://127.0.0.1:25344",
+    // "proxy": "socks5://127.0.0.1:25344",
 
     // general
     "icon_theme": "Material Icon Theme",
@@ -43,6 +43,7 @@
     "hide_mouse": "on_typing",
     "buffer_font_size": 13.5,
     "autosave": "on_focus_change",
+    "format_on_save": "off",
     "current_line_highlight": "gutter",
     "buffer_font_family": "JetBrainsMono Nerd Font Mono",
     "buffer_font_features": {
