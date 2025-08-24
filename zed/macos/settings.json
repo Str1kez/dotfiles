@@ -34,7 +34,7 @@
     "features": {
         "edit_prediction_provider": "zed"
     },
-    // "proxy": "socks5://127.0.0.1:25344",
+    "proxy": "socks5://127.0.0.1:25344",
 
     // general
     "icon_theme": "Material Icon Theme",

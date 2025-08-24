@@ -35,5 +35,11 @@
         "bindings": {
             ", g": "pane::DeploySearch"
         }
+    },
+    {
+      "context": "(VimControl && !menu)",
+      "bindings": {
+        "cmd-.": "editor::ToggleCodeActions"
+      }
     }
 ]
