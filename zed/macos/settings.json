@@ -84,33 +84,22 @@
                 ]
             }
         },
-        "pyright": {
-            "settings": {
-                "python.analysis": {
-                    "diagnosticMode": "workspace",
-                    "typeCheckingMode": "standard"
-                },
-                "python": {
-                    "pythonPath": ".venv/bin/python"
-                }
-            }
-        },
         "basedpyright": {
             "settings": {
                 "basedpyright.analysis": {
                     "diagnosticMode": "workspace",
                     "typeCheckingMode": "standard"
-                },
-                "python": {
-                    "pythonPath": ".venv/bin/python"
                 }
+                // "python": {
+                //     "pythonPath": ".venv/bin/python"
+                // }
             }
         },
         "ruff": {
-            "binary": {
-                "path": ".venv/bin/ruff",
-                "arguments": ["server"]
-            },
+            // "binary": {
+            //     "path": ".venv/bin/ruff",
+            //     "arguments": ["server"]
+            // },
             "initialization_options": {
                 "settings": {
                     // Ruff server settings goes here
@@ -130,7 +119,7 @@
             "language_servers": ["gopls", "golangci-lint"]
         },
         "Python": {
-            "language_servers": ["basedpyright", "ruff", "!pyright", "!pylsp"],
+            "language_servers": ["basedpyright", "ruff"],
             "formatter": [
                 {
                     "code_actions": {
