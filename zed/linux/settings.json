@@ -38,6 +38,11 @@
     "outline_panel": {
         "dock": "right"
     },
+    "diagnostics": {
+        "inline": {
+            "enabled": true
+        }
+    },
 
     // AI
     "agent": {

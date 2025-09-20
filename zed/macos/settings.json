@@ -64,6 +64,12 @@
         "enabled": true,
         "coloring": "indent_aware"
     },
+    "diagnostics": {
+        "inline": {
+            "enabled": true
+        }
+    },
+    "use_system_window_tabs": true,
 
     // vim
     "vim_mode": true,
