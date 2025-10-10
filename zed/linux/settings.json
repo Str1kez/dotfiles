@@ -10,7 +10,7 @@
     // View
     "icon_theme": "Material Icon Theme",
     "base_keymap": "VSCode",
-    "theme": "Cursor Dark",
+    "theme": "Catppuccin Macchiato - No Italics",
     "buffer_font_size": 14,
     "autosave": "on_focus_change",
     "auto_update": true,
@@ -78,7 +78,7 @@
             "language_servers": ["gopls", "golangci-lint"]
         },
         "Python": {
-            "language_servers": ["ruff", "basedpyright", "!pyright", "!pylsp"],
+            "language_servers": ["ruff", "basedpyright"],
             "formatter": [
                 {
                     "code_actions": {
@@ -109,33 +109,22 @@
                 ]
             }
         },
-        "pyright": {
-            "settings": {
-                "python.analysis": {
-                    "diagnosticMode": "workspace",
-                    "typeCheckingMode": "standard"
-                },
-                "python": {
-                    "pythonPath": ".venv/bin/python"
-                }
-            }
-        },
         "basedpyright": {
             "settings": {
                 "basedpyright.analysis": {
                     "diagnosticMode": "workspace",
                     "typeCheckingMode": "standard"
-                },
-                "python": {
-                    "pythonPath": ".venv/bin/python"
                 }
+                // "python": {
+                //     "pythonPath": ".venv/bin/python"
+                // }
             }
         },
         "ruff": {
-            "binary": {
-                "path": ".venv/bin/ruff",
-                "arguments": ["server"]
-            },
+            // "binary": {
+            //     "path": ".venv/bin/ruff",
+            //     "arguments": ["server"]
+            // },
             "initialization_options": {
                 "settings": {
                     // Ruff server settings goes here

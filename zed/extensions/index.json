@@ -36,6 +36,36 @@
       },
       "dev": false
     },
+    "catppuccin": {
+      "manifest": {
+        "id": "catppuccin",
+        "name": "Catppuccin",
+        "version": "0.2.23",
+        "schema_version": 1,
+        "description": "🦀 Soothing pastel theme for Zed",
+        "repository": "https://github.com/catppuccin/zed",
+        "authors": [
+          "Catppuccin <releases@catppuccin.com>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [
+          "themes/catppuccin-no-italics-mauve.json",
+          "themes/catppuccin-mauve.json"
+        ],
+        "icon_themes": [],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {},
+        "context_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
     "cursor": {
       "manifest": {
         "id": "cursor",
@@ -70,7 +100,7 @@
       "manifest": {
         "id": "dockerfile",
         "name": "Dockerfile",
-        "version": "0.0.5",
+        "version": "0.0.6",
         "schema_version": 1,
         "description": "Dockerfile support.",
         "repository": "https://github.com/zed-extensions/dockerfile",
@@ -80,7 +110,7 @@
         ],
         "lib": {
           "kind": "Rust",
-          "version": "0.0.4"
+          "version": "0.7.0"
         },
         "themes": [],
         "icon_themes": [],
@@ -204,35 +234,6 @@
       },
       "dev": false
     },
-    "github-dark-default": {
-      "manifest": {
-        "id": "github-dark-default",
-        "name": "GitHub Dark Default",
-        "version": "1.0.9",
-        "schema_version": 1,
-        "description": "A modified port of the GitHub VSCode theme",
-        "repository": "https://github.com/mordfustang21/zed-github-dark",
-        "authors": [
-          "MordFustang21"
-        ],
-        "lib": {
-          "kind": null,
-          "version": null
-        },
-        "themes": [
-          "themes/dark-default.json"
-        ],
-        "icon_themes": [],
-        "languages": [],
-        "grammars": {},
-        "language_servers": {},
-        "context_servers": {},
-        "slash_commands": {},
-        "snippets": null,
-        "capabilities": []
-      },
-      "dev": false
-    },
     "gitlab-ci-ls": {
       "manifest": {
         "id": "gitlab-ci-ls",
@@ -256,70 +257,6 @@
           "gitlab-ci": {
             "language": "YAML",
             "languages": [],
-            "language_ids": {},
-            "code_action_kinds": null
-          }
-        },
-        "context_servers": {},
-        "slash_commands": {},
-        "snippets": null,
-        "capabilities": []
-      },
-      "dev": false
-    },
-    "go-snippets": {
-      "manifest": {
-        "id": "go-snippets",
-        "name": "Go Snippets",
-        "version": "0.1.0",
-        "schema_version": 1,
-        "description": "Go snippets for Zed IDE. A collection of go snippets to improve your development speed.",
-        "repository": "https://github.com/ayberkgezer/go-zed-snippets",
-        "authors": [
-          "Ayberk Gezer <ayberkgezer@outlook.com>"
-        ],
-        "lib": {
-          "kind": null,
-          "version": null
-        },
-        "themes": [],
-        "icon_themes": [],
-        "languages": [],
-        "grammars": {},
-        "language_servers": {},
-        "context_servers": {},
-        "slash_commands": {},
-        "snippets": "./snippets/go.json",
-        "capabilities": []
-      },
-      "dev": false
-    },
-    "golangci-lint": {
-      "manifest": {
-        "id": "golangci-lint",
-        "name": "golangci-lint",
-        "version": "0.2.0",
-        "schema_version": 1,
-        "description": "golangci-lint support.",
-        "repository": "https://github.com/zed-extensions/golangci-lint",
-        "authors": [
-          "Jordan Gregory <jordan@j4ng5y.dev>",
-          "Joakim Engeset <joakim.engeset@gmail.com>"
-        ],
-        "lib": {
-          "kind": "Rust",
-          "version": "0.2.0"
-        },
-        "themes": [],
-        "icon_themes": [],
-        "languages": [],
-        "grammars": {},
-        "language_servers": {
-          "golangci-lint": {
-            "language": null,
-            "languages": [
-              "Go"
-            ],
             "language_ids": {},
             "code_action_kinds": null
           }
@@ -370,7 +307,7 @@
       "manifest": {
         "id": "html",
         "name": "HTML",
-        "version": "0.2.2",
+        "version": "0.2.3",
         "schema_version": 1,
         "description": "HTML support.",
         "repository": "https://github.com/zed-industries/zed",
@@ -379,7 +316,7 @@
         ],
         "lib": {
           "kind": "Rust",
-          "version": "0.1.0"
+          "version": "0.7.0"
         },
         "themes": [],
         "icon_themes": [],
@@ -497,7 +434,7 @@
       "manifest": {
         "id": "material-icon-theme",
         "name": "Material Icon Theme",
-        "version": "1.1.0",
+        "version": "1.2.0",
         "schema_version": 1,
         "description": "Material Design icons.",
         "repository": "https://github.com/zed-extensions/material-icon-theme",
@@ -526,7 +463,7 @@
       "manifest": {
         "id": "mcp-server-context7",
         "name": "Context7 MCP Server",
-        "version": "0.0.4",
+        "version": "0.0.5",
         "schema_version": 1,
         "description": "Model Context Protocol Server for Context7",
         "repository": "https://github.com/akbxr/zed-mcp-server-context7",
@@ -535,7 +472,7 @@
         ],
         "lib": {
           "kind": "Rust",
-          "version": "0.5.0"
+          "version": "0.7.0"
         },
         "themes": [],
         "icon_themes": [],
@@ -545,35 +482,6 @@
         "context_servers": {
           "mcp-server-context7": {}
         },
-        "slash_commands": {},
-        "snippets": null,
-        "capabilities": []
-      },
-      "dev": false
-    },
-    "nord": {
-      "manifest": {
-        "id": "nord",
-        "name": "Nord themes",
-        "version": "0.0.11",
-        "schema_version": 1,
-        "description": "Nord themes",
-        "repository": "https://github.com/mikasius/zed-nord-theme",
-        "authors": [
-          "Sergei Metlenkin <s.metlenkin@gmail.com>"
-        ],
-        "lib": {
-          "kind": null,
-          "version": null
-        },
-        "themes": [
-          "themes/nord.json"
-        ],
-        "icon_themes": [],
-        "languages": [],
-        "grammars": {},
-        "language_servers": {},
-        "context_servers": {},
         "slash_commands": {},
         "snippets": null,
         "capabilities": []
@@ -687,45 +595,11 @@
       },
       "dev": false
     },
-    "ruff": {
-      "manifest": {
-        "id": "ruff",
-        "name": "Ruff",
-        "version": "0.1.1",
-        "schema_version": 1,
-        "description": "Support for Ruff, the Python linter and formatter",
-        "repository": "https://github.com/zed-industries/zed",
-        "authors": [],
-        "lib": {
-          "kind": "Rust",
-          "version": "0.1.0"
-        },
-        "themes": [],
-        "icon_themes": [],
-        "languages": [],
-        "grammars": {},
-        "language_servers": {
-          "ruff": {
-            "language": null,
-            "languages": [
-              "Python"
-            ],
-            "language_ids": {},
-            "code_action_kinds": null
-          }
-        },
-        "context_servers": {},
-        "slash_commands": {},
-        "snippets": null,
-        "capabilities": []
-      },
-      "dev": false
-    },
     "scss": {
       "manifest": {
         "id": "scss",
         "name": "SCSS",
-        "version": "0.1.1",
+        "version": "0.1.2",
         "schema_version": 1,
         "description": "SCSS support",
         "repository": "https://github.com/bajrangCoder/zed-scss",
@@ -734,7 +608,7 @@
         ],
         "lib": {
           "kind": "Rust",
-          "version": "0.0.6"
+          "version": "0.7.0"
         },
         "themes": [],
         "icon_themes": [],
@@ -842,57 +716,44 @@
         "capabilities": []
       },
       "dev": false
-    },
-    "vscode-dark-plus": {
-      "manifest": {
-        "id": "vscode-dark-plus",
-        "name": "Vscode Dark Plus Theme",
-        "version": "0.0.1",
-        "schema_version": 0,
-        "description": "Portable Vscode Dark Plus Theme",
-        "repository": "https://github.com/d1y/vscode_dark_plus.zed",
-        "authors": [
-          "d1y <chenhonzhou@gmail.com>"
-        ],
-        "lib": {
-          "kind": null,
-          "version": null
-        },
-        "themes": [
-          "themes/vscode_dark_plus.json"
-        ],
-        "icon_themes": [],
-        "languages": [],
-        "grammars": {},
-        "language_servers": {},
-        "context_servers": {},
-        "slash_commands": {},
-        "snippets": null,
-        "capabilities": []
-      },
-      "dev": false
     }
   },
   "themes": {
+    "Catppuccin Frappé": {
+      "extension": "catppuccin",
+      "path": "themes/catppuccin-mauve.json"
+    },
+    "Catppuccin Frappé - No Italics": {
+      "extension": "catppuccin",
+      "path": "themes/catppuccin-no-italics-mauve.json"
+    },
+    "Catppuccin Latte": {
+      "extension": "catppuccin",
+      "path": "themes/catppuccin-mauve.json"
+    },
+    "Catppuccin Latte - No Italics": {
+      "extension": "catppuccin",
+      "path": "themes/catppuccin-no-italics-mauve.json"
+    },
+    "Catppuccin Macchiato": {
+      "extension": "catppuccin",
+      "path": "themes/catppuccin-mauve.json"
+    },
+    "Catppuccin Macchiato - No Italics": {
+      "extension": "catppuccin",
+      "path": "themes/catppuccin-no-italics-mauve.json"
+    },
+    "Catppuccin Mocha": {
+      "extension": "catppuccin",
+      "path": "themes/catppuccin-mauve.json"
+    },
+    "Catppuccin Mocha - No Italics": {
+      "extension": "catppuccin",
+      "path": "themes/catppuccin-no-italics-mauve.json"
+    },
     "Cursor Dark": {
       "extension": "cursor",
       "path": "themes/cursor.json"
-    },
-    "GitHub Dark Default": {
-      "extension": "github-dark-default",
-      "path": "themes/dark-default.json"
-    },
-    "Nord": {
-      "extension": "nord",
-      "path": "themes/nord.json"
-    },
-    "Nord Light": {
-      "extension": "nord",
-      "path": "themes/nord.json"
-    },
-    "VScode Dark Plus": {
-      "extension": "vscode-dark-plus",
-      "path": "themes/vscode_dark_plus.json"
     }
   },
   "icon_themes": {
