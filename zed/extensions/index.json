@@ -268,6 +268,70 @@
       },
       "dev": false
     },
+    "go-snippets": {
+      "manifest": {
+        "id": "go-snippets",
+        "name": "Go Snippets",
+        "version": "0.1.0",
+        "schema_version": 1,
+        "description": "Go snippets for Zed IDE. A collection of go snippets to improve your development speed.",
+        "repository": "https://github.com/ayberkgezer/go-zed-snippets",
+        "authors": [
+          "Ayberk Gezer <ayberkgezer@outlook.com>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {},
+        "context_servers": {},
+        "slash_commands": {},
+        "snippets": "./snippets/go.json",
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "golangci-lint": {
+      "manifest": {
+        "id": "golangci-lint",
+        "name": "golangci-lint",
+        "version": "0.2.0",
+        "schema_version": 1,
+        "description": "golangci-lint support.",
+        "repository": "https://github.com/zed-extensions/golangci-lint",
+        "authors": [
+          "Jordan Gregory <jordan@j4ng5y.dev>",
+          "Joakim Engeset <joakim.engeset@gmail.com>"
+        ],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.2.0"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {
+          "golangci-lint": {
+            "language": null,
+            "languages": [
+              "Go"
+            ],
+            "language_ids": {},
+            "code_action_kinds": null
+          }
+        },
+        "context_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
     "gosum": {
       "manifest": {
         "id": "gosum",
@@ -335,8 +399,8 @@
             "language": "HTML",
             "languages": [],
             "language_ids": {
-              "CSS": "css",
-              "HTML": "html"
+              "HTML": "html",
+              "CSS": "css"
             },
             "code_action_kinds": null
           }
@@ -595,6 +659,40 @@
       },
       "dev": false
     },
+    "ruff": {
+      "manifest": {
+        "id": "ruff",
+        "name": "Ruff",
+        "version": "0.1.1",
+        "schema_version": 1,
+        "description": "Support for Ruff, the Python linter and formatter",
+        "repository": "https://github.com/zed-industries/zed",
+        "authors": [],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.1.0"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {
+          "ruff": {
+            "language": null,
+            "languages": [
+              "Python"
+            ],
+            "language_ids": {},
+            "code_action_kinds": null
+          }
+        },
+        "context_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
     "scss": {
       "manifest": {
         "id": "scss",
@@ -716,6 +814,83 @@
         "capabilities": []
       },
       "dev": false
+    },
+    "vscode-dark-plus": {
+      "manifest": {
+        "id": "vscode-dark-plus",
+        "name": "Vscode Dark Plus Theme",
+        "version": "0.0.1",
+        "schema_version": 0,
+        "description": "Portable Vscode Dark Plus Theme",
+        "repository": "https://github.com/d1y/vscode_dark_plus.zed",
+        "authors": [
+          "d1y <chenhonzhou@gmail.com>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [
+          "themes/vscode_dark_plus.json"
+        ],
+        "icon_themes": [],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {},
+        "context_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "vue": {
+      "manifest": {
+        "id": "vue",
+        "name": "Vue",
+        "version": "0.2.8",
+        "schema_version": 1,
+        "description": "Vue support.",
+        "repository": "https://github.com/zed-extensions/vue",
+        "authors": [
+          "Zed Industries <support@zed.dev>"
+        ],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.4.0"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/vue"
+        ],
+        "grammars": {
+          "vue": {
+            "repository": "https://github.com/tree-sitter-grammars/tree-sitter-vue",
+            "rev": "7e48557b903a9db9c38cea3b7839ef7e1f36c693",
+            "path": null
+          }
+        },
+        "language_servers": {
+          "vue-language-server": {
+            "language": "Vue.js",
+            "languages": [],
+            "language_ids": {
+              "Vue.js": "vue"
+            },
+            "code_action_kinds": [
+              "",
+              "quickfix",
+              "refactor.rewrite"
+            ]
+          }
+        },
+        "context_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
     }
   },
   "themes": {
@@ -754,6 +929,10 @@
     "Cursor Dark": {
       "extension": "cursor",
       "path": "themes/cursor.json"
+    },
+    "VScode Dark Plus": {
+      "extension": "vscode-dark-plus",
+      "path": "themes/vscode_dark_plus.json"
     }
   },
   "icon_themes": {
@@ -985,6 +1164,18 @@
       },
       "hidden": false,
       "grammar": "toml"
+    },
+    "Vue.js": {
+      "extension": "vue",
+      "path": "languages/vue",
+      "matcher": {
+        "path_suffixes": [
+          "vue"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "vue"
     },
     "env": {
       "extension": "env",
