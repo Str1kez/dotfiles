@@ -16,7 +16,7 @@
             "source": "extension",
             "enabled": true,
             "settings": {
-                "default_minimum_tokens": "10000"
+                "context7_api_key": "<token>"
             }
         }
     },
@@ -28,7 +28,7 @@
         "default_profile": "ask",
         "default_model": {
             "provider": "zed.dev",
-            "model": "claude-sonnet-4-thinking"
+            "model": "claude-sonnet-4-5"
         }
     },
     "features": {
@@ -70,6 +70,7 @@
         }
     },
     "use_system_window_tabs": true,
+    "scroll_beyond_last_line": "off",
 
     // vim
     "vim_mode": true,
