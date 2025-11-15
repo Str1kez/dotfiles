@@ -31,10 +31,17 @@
             "model": "claude-sonnet-4-5"
         }
     },
+    "agent_servers": {
+        "claude": {
+            "env": {
+                "CLAUDE_CODE_EXECUTABLE": "/Users/vazinov/.local/bin/claude"
+            }
+        }
+    },
     "features": {
         "edit_prediction_provider": "zed"
     },
-    "proxy": "socks5://127.0.0.1:25344",
+    "proxy": "http://127.0.0.1:25345",
 
     // general
     "icon_theme": "Material Icon Theme",
