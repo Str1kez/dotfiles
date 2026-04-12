@@ -8,12 +8,14 @@
 // from the command palette or from `Zed` application menu.
 {
     // AI
+    "edit_predictions": {
+        "provider": "zed"
+    },
     "outline_panel": {
         "dock": "right"
     },
     "context_servers": {
         "mcp-server-context7": {
-            "source": "extension",
             "enabled": true,
             "settings": {
                 "context7_api_key": "<token>"
@@ -23,7 +25,6 @@
     "agent": {
         "play_sound_when_agent_done": true,
         "use_modifier_to_send": false,
-        "always_allow_tool_actions": false,
         "single_file_review": false,
         "default_profile": "ask",
         "default_model": {
@@ -32,21 +33,27 @@
         }
     },
     "agent_servers": {
-        "claude": {
+        "claude-acp": {
+            "type": "registry",
             "env": {
                 "CLAUDE_CODE_EXECUTABLE": "/Users/vazinov/.local/bin/claude"
             }
         }
     },
-    "features": {
-        "edit_prediction_provider": "zed"
-    },
-    "proxy": "http://127.0.0.1:25345",
+    // "proxy": "http://127.0.0.1:25345",
 
     // general
-    "icon_theme": "Material Icon Theme",
+    "icon_theme": {
+        "mode": "light",
+        "light": "Material Icon Theme",
+        "dark": "Material Icon Theme"
+    },
     "base_keymap": "VSCode",
-    "theme": "Cursor Dark",
+    "theme": {
+        "mode": "dark",
+        "light": "One Light",
+        "dark": "pustota-theme"
+    },
     "hide_mouse": "on_typing",
     "buffer_font_size": 13.5,
     "autosave": "on_focus_change",
@@ -65,7 +72,7 @@
     },
     "preview_tabs": {
         "enable_preview_from_file_finder": true,
-        "enable_preview_from_code_navigation": true
+        "enable_keep_preview_on_code_navigation": true
     },
     "indent_guides": {
         "enabled": true,
