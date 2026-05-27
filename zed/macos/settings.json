@@ -8,6 +8,15 @@
 // from the command palette or from `Zed` application menu.
 {
     // AI
+    "project_panel": {
+        "dock": "left"
+    },
+    "collaboration_panel": {
+        "dock": "left"
+    },
+    "git_panel": {
+        "dock": "left"
+    },
     "edit_predictions": {
         "provider": "zed"
     },
@@ -23,7 +32,8 @@
         }
     },
     "agent": {
-        "play_sound_when_agent_done": true,
+        "dock": "right",
+        "play_sound_when_agent_done": "always",
         "use_modifier_to_send": false,
         "single_file_review": false,
         "default_profile": "ask",

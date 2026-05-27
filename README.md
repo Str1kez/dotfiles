@@ -5,6 +5,7 @@
 ## 〔 〕 Терминал
 
 - [Alacritty](https://github.com/alacritty/alacritty) Быстрый и красивый терминал с большим количеством настроек
+- [Ghostty](https://github.com/ghostty-org/ghostty) Терминал на основе своей либы, хорошо интегрирован с маком
 - [Starship](https://starship.rs/) Быстрый и красивый промпт
 - [Oh My Zsh](https://ohmyz.sh/) Красивая и функциональная консольная оболочка
 - [Nvim](https://neovim.io/) Быстро что-то поправить. Конфиг для него [здесь](https://github.com/Str1kez/VimConfig)

@@ -4,7 +4,7 @@
       "manifest": {
         "id": "comment",
         "name": "Comments Highlighter",
-        "version": "0.6.4",
+        "version": "0.6.5",
         "schema_version": 1,
         "description": "Comment language extension for highlighting special comments",
         "repository": "https://github.com/thedadams/zed-comment",
@@ -254,6 +254,72 @@
       },
       "dev": false
     },
+    "go-snippets": {
+      "manifest": {
+        "id": "go-snippets",
+        "name": "Go Snippets",
+        "version": "0.1.5",
+        "schema_version": 1,
+        "description": "Go snippets for Zed IDE. A collection of go snippets to improve your development speed.",
+        "repository": "https://github.com/ayberkgezer/go-zed-snippets",
+        "authors": [
+          "Ayberk Gezer <ayberkgezer@outlook.com>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {},
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": "./snippets/go.json",
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "golangci-lint": {
+      "manifest": {
+        "id": "golangci-lint",
+        "name": "golangci-lint",
+        "version": "0.2.0",
+        "schema_version": 1,
+        "description": "golangci-lint support.",
+        "repository": "https://github.com/zed-extensions/golangci-lint",
+        "authors": [
+          "Jordan Gregory <jordan@j4ng5y.dev>",
+          "Joakim Engeset <joakim.engeset@gmail.com>"
+        ],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.2.0"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {
+          "golangci-lint": {
+            "language": null,
+            "languages": [
+              "Go"
+            ],
+            "language_ids": {},
+            "code_action_kinds": null
+          }
+        },
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
     "gosum": {
       "manifest": {
         "id": "gosum",
@@ -353,6 +419,39 @@
         },
         "themes": [
           "themes/intellij-newui.json"
+        ],
+        "icon_themes": [],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {},
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "jetbrains-themes": {
+      "manifest": {
+        "id": "jetbrains-themes",
+        "name": "JetBrains Themes",
+        "version": "1.1.0",
+        "schema_version": 1,
+        "description": "Light, Dark, Islands Light and Islands Dark JetBrains themes",
+        "repository": "https://github.com/artemevsevev/zed-theme-jetbrains",
+        "authors": [
+          "Artem Evsevev <artem@qrsoft.ru>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [
+          "themes/jetbrains-islands-light.json",
+          "themes/jetbrains-light.json",
+          "themes/jetbrains-dark.json",
+          "themes/jetbrains-islands-dark.json"
         ],
         "icon_themes": [],
         "languages": [],
@@ -513,6 +612,36 @@
         "context_servers": {
           "mcp-server-context7": {}
         },
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
+    "one-dark-pro": {
+      "manifest": {
+        "id": "one-dark-pro",
+        "name": "One Dark Pro",
+        "version": "0.0.11",
+        "schema_version": 1,
+        "description": "A port of VSCode One Dark Pro with some tweaks",
+        "repository": "https://github.com/mordfustang21/zed-one-dark-pro",
+        "authors": [
+          "MordFustang21"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [
+          "themes/one-dark.json"
+        ],
+        "icon_themes": [],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {},
+        "context_servers": {},
         "agent_servers": {},
         "slash_commands": {},
         "snippets": null,
@@ -717,36 +846,6 @@
       },
       "dev": false
     },
-    "sonokai": {
-      "manifest": {
-        "id": "sonokai",
-        "name": "Sonokai",
-        "version": "0.0.7",
-        "schema_version": 1,
-        "description": "Sonokai Color Scheme for Zed",
-        "repository": "https://github.com/ciathefed/zed-sonokai",
-        "authors": [
-          "ciathefed <ciathefed@protonmail.com>"
-        ],
-        "lib": {
-          "kind": null,
-          "version": null
-        },
-        "themes": [
-          "themes/sonokai.json"
-        ],
-        "icon_themes": [],
-        "languages": [],
-        "grammars": {},
-        "language_servers": {},
-        "context_servers": {},
-        "agent_servers": {},
-        "slash_commands": {},
-        "snippets": null,
-        "capabilities": []
-      },
-      "dev": false
-    },
     "sql": {
       "manifest": {
         "id": "sql",
@@ -853,11 +952,41 @@
       },
       "dev": false
     },
+    "vscode-dark-plus": {
+      "manifest": {
+        "id": "vscode-dark-plus",
+        "name": "Vscode Dark Plus Theme",
+        "version": "0.0.1",
+        "schema_version": 0,
+        "description": "Portable Vscode Dark Plus Theme",
+        "repository": "https://github.com/d1y/vscode_dark_plus.zed",
+        "authors": [
+          "d1y <chenhonzhou@gmail.com>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [
+          "themes/vscode_dark_plus.json"
+        ],
+        "icon_themes": [],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {},
+        "context_servers": {},
+        "agent_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
     "vue": {
       "manifest": {
         "id": "vue",
         "name": "Vue",
-        "version": "0.3.3",
+        "version": "0.3.4",
         "schema_version": 1,
         "description": "Vue support.",
         "repository": "https://github.com/zed-extensions/vue",
@@ -908,37 +1037,37 @@
       "extension": "cursor",
       "path": "themes/cursor.json"
     },
+    "JetBrains Dark": {
+      "extension": "jetbrains-themes",
+      "path": "themes/jetbrains-dark.json"
+    },
+    "JetBrains Islands Dark": {
+      "extension": "jetbrains-themes",
+      "path": "themes/jetbrains-islands-dark.json"
+    },
+    "JetBrains Islands Light": {
+      "extension": "jetbrains-themes",
+      "path": "themes/jetbrains-islands-light.json"
+    },
+    "JetBrains Light": {
+      "extension": "jetbrains-themes",
+      "path": "themes/jetbrains-light.json"
+    },
     "JetBrains New Dark": {
       "extension": "intellij-newui-theme",
       "path": "themes/intellij-newui.json"
     },
-    "Sonokai": {
-      "extension": "sonokai",
-      "path": "themes/sonokai.json"
-    },
-    "Sonokai Andromeda": {
-      "extension": "sonokai",
-      "path": "themes/sonokai.json"
-    },
-    "Sonokai Atlantis": {
-      "extension": "sonokai",
-      "path": "themes/sonokai.json"
-    },
-    "Sonokai Espresso": {
-      "extension": "sonokai",
-      "path": "themes/sonokai.json"
-    },
-    "Sonokai Maia": {
-      "extension": "sonokai",
-      "path": "themes/sonokai.json"
-    },
-    "Sonokai Shusia": {
-      "extension": "sonokai",
-      "path": "themes/sonokai.json"
+    "One Dark Pro": {
+      "extension": "one-dark-pro",
+      "path": "themes/one-dark.json"
     },
     "VSCode Dark Modern": {
       "extension": "vscode-dark-modern",
       "path": "themes/vscode-dark-modern.json"
+    },
+    "VScode Dark Plus": {
+      "extension": "vscode-dark-plus",
+      "path": "themes/vscode_dark_plus.json"
     }
   },
   "icon_themes": {

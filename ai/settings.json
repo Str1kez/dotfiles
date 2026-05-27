@@ -1,8 +1,4 @@
 {
-  "alwaysThinkingEnabled": true,
-  "autoUpdatesChannel": "stable",
-  "theme": "dark-ansi",
-  "editorMode": "vim",
   "hooks": {
     "PostToolUse": [
       {
@@ -15,5 +11,10 @@
         ]
       }
     ]
-  }
+  },
+  "language": "Russian",
+  "alwaysThinkingEnabled": true,
+  "autoUpdatesChannel": "stable",
+  "theme": "dark",
+  "editorMode": "vim"
 }
