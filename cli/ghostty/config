@@ -1,3 +1,4 @@
 
 theme = Sonokai
 font-family = JetBrains Mono
+copy-on-select=false

@@ -188,7 +188,7 @@ alias dcl="docker compose logs"
 alias dcb="docker compose build"
 
 
-hash -d zvonok=~/Documents/developer/zvonok
+hash -d dev=~/Documents/developer
 
 eval "$(starship init zsh)"
 eval "$(fzf --zsh)"
@@ -206,3 +206,7 @@ bindkey '^X^E' edit-command-line
 chpwd() {
   ls
 }
+
+# >>> agterm agent-status >>>
+source '/Users/vazinov/.config/agterm/agent-status/shell/integration.sh'
+# <<< agterm agent-status <<<
