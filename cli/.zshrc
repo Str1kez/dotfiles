@@ -178,6 +178,8 @@ alias gst="git stash"
 alias tm="tmux attach || tmux new"
 alias mk="minikube"
 alias ls="eza --icons=always"
+alias o="opencode"
+alias c="claude"
 
 alias d="docker"
 alias dp="docker ps"

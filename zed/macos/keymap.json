@@ -33,7 +33,7 @@
     {
         "context": "Editor && vim_mode != insert && !menu",
         "bindings": {
-            ", g": "pane::DeploySearch"
+            ", g": "text_finder::Toggle"
         }
     },
     {

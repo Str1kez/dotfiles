@@ -1,91 +1,38 @@
 {
-    "$schema": "https://opencode.ai/config.json",
-    "lsp": true,
-    "mcp": {
-        "context7": {
-            "type": "remote",
-            "url": "https://mcp.context7.com/mcp",
-            "headers": {
-                "CONTEXT7_API_KEY": "<token>"
-            }
-        }
-    },
-    "plugin": [],
-    "agent": {
-        "code-reviewer": {
-            "description": "Use after completing a major implementation step, or when the user asks\n\"review this / check the code / look at the diff\", or before any commit.\nSKIP: trivial doc-only changes, cosmetic refactors, pure design discussions.",
-            "mode": "subagent",
-            "permission": {
-                "read": "allow",
-                "bash": "allow",
-                "glob": "allow",
-                "grep": "allow",
-                "edit": "deny"
-            },
-            "prompt": "{file:./agent-prompts/code-reviewer.md}"
-        },
-        "debugger": {
-            "description": "Use when the user reports \"doesn't work / crashes / returns wrong value / flaky test /\nunclear bug\". Also use proactively when a test fails unexpectedly mid-task.\nSKIP: typos, obvious syntax errors, cases where the root cause is already stated by the user.",
-            "mode": "subagent",
-            "permission": {
-                "read": "allow",
-                "edit": "allow",
-                "glob": "allow",
-                "grep": "allow",
-                "bash": "allow"
-            },
-            "prompt": "{file:./agent-prompts/debugger.md}"
-        },
-        "fastapi-backend": {
-            "description": "Use for Python backend API work — FastAPI or LiteStar. TRIGGER when: a file imports\n`fastapi`, `litestar`, `sqlalchemy`, `pydantic`, `pydantic_ai`, or `alembic`; user asks\nabout endpoints, schemas, DB migrations, async patterns, or dependency injection in Python.\nSKIP: frontend-only tasks, non-API Python scripts, ML pipelines (use ml-helper instead).",
-            "mode": "subagent",
-            "permission": {
-                "read": "allow",
-                "edit": "allow",
-                "glob": "allow",
-                "grep": "allow",
-                "bash": "allow"
-            },
-            "prompt": "{file:./agent-prompts/fastapi-backend.md}"
-        },
-        "ml-helper": {
-            "description": "Use for ML / data tasks. TRIGGER when: file imports `pandas`, `numpy`, `torch`,\n`sklearn`, `xgboost`, `transformers`, `datasets`; user mentions training,\ndataset, pipeline, features, evaluation, or model.\nSKIP: general Python not involving ML; pure FastAPI endpoints without ML (use fastapi-backend).",
-            "mode": "subagent",
-            "permission": {
-                "read": "allow",
-                "edit": "allow",
-                "glob": "allow",
-                "grep": "allow",
-                "bash": "allow"
-            },
-            "prompt": "{file:./agent-prompts/ml-helper.md}"
-        },
-        "pr-writer": {
-            "description": "Use when the user asks \"напиши PR / сгенерь commit message / опиши этот diff /\nсделай changelog entry\". Also invoke proactively before `git commit` if no message\nwas provided, or before `gh pr create` if no description was provided.\nSKIP: when the user has already written the message themselves.",
-            "mode": "subagent",
-            "permission": {
-                "read": "allow",
-                "bash": "allow",
-                "edit": "deny"
-            },
-            "prompt": "{file:./agent-prompts/pr-writer.md}"
-        }
-    },
-    "provider": {
-        "qwen-cloud": {
-            "npm": "@ai-sdk/openai-compatible",
-            "name": "Qwen.Cloud",
-            "options": {
-                "baseURL": "https://dashscope-intl.aliyuncs.com/compatible-mode/v1"
-            },
-            "models": {
-                "qwen3.8-max": {
-                    "name": "Qwen 3.8 Max"
-                },
-                "deepseek-v4-pro": {
-                    "name": "Deepseek V4 Pro"
-                }
-            }
-        }
+  "$schema": "https://opencode.ai/config.json",
+  "lsp": true,
+  "mcp": {
+    "context7": {
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp",
+      "headers": {
+        "CONTEXT7_API_KEY": "{file:./.context7.key}"
+      }
     }
+  },
+  "plugin": [],
+  "provider": {
+    "zai": {
+      "options": {
+        "baseURL": "http://127.0.0.1:17321",
+        "headers": {
+          "sleev-harness": "opencode",
+          "sleev-base-url": "https://api.z.ai/api/paas/v4"
+        }
+      }
+    },
+    "opencode": {
+      "options": {
+        "baseURL": "http://127.0.0.1:17321",
+        "headers": {
+          "sleev-provider": "opencode",
+          "sleev-harness": "opencode"
+        }
+      }
+    }
+  },
+  // убрать без sleev
+  "compaction": {
+    "prune": false
+  }
 }
