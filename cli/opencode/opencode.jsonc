@@ -1,38 +1,61 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "lsp": true,
   "mcp": {
-    "context7": {
-      "type": "remote",
-      "url": "https://mcp.context7.com/mcp",
-      "headers": {
-        "CONTEXT7_API_KEY": "{file:./.context7.key}"
+    "servers": {
+      "context7": {
+        "type": "remote",
+        "url": "https://mcp.context7.com/mcp",
+        "headers": {
+          "CONTEXT7_API_KEY": "{file:./.context7.key}"
+        }
       }
     }
   },
-  "plugin": [],
-  "provider": {
+  "providers": {
+    // убрать без sleev
     "zai": {
-      "options": {
-        "baseURL": "http://127.0.0.1:17321",
-        "headers": {
-          "sleev-harness": "opencode",
-          "sleev-base-url": "https://api.z.ai/api/paas/v4"
-        }
+      "settings": {
+        "baseURL": "http://127.0.0.1:17321"
+      },
+      "headers": {
+        "sleev-harness": "opencode",
+        "sleev-base-url": "https://api.z.ai/api/paas/v4"
       }
     },
+    // убрать без sleev
     "opencode": {
-      "options": {
-        "baseURL": "http://127.0.0.1:17321",
-        "headers": {
-          "sleev-provider": "opencode",
-          "sleev-harness": "opencode"
-        }
+      "settings": {
+        "baseURL": "http://127.0.0.1:17321"
+      },
+      "headers": {
+        "sleev-provider": "opencode",
+        "sleev-harness": "opencode"
       }
     }
   },
-  // убрать без sleev
-  "compaction": {
-    "prune": false
-  }
+  // Порядок правил важен: побеждает последний совпавший паттерн (семантика Claude Code),
+  // поэтому deny-правила стоят после ask-правил. Перенесено из settings/claude-settings.json.
+  "permissions": [
+    { "action": "shell", "resource": "git commit *", "effect": "ask" },
+    { "action": "shell", "resource": "git push *", "effect": "ask" },
+    { "action": "shell", "resource": "git checkout *", "effect": "ask" },
+    { "action": "shell", "resource": "git merge *", "effect": "ask" },
+    { "action": "shell", "resource": "git rebase *", "effect": "ask" },
+    { "action": "shell", "resource": "npm install *", "effect": "ask" },
+    { "action": "shell", "resource": "pip install *", "effect": "ask" },
+    { "action": "shell", "resource": "uv pip install *", "effect": "ask" },
+    { "action": "shell", "resource": "*-exec*", "effect": "ask" },
+    { "action": "shell", "resource": "*-delete*", "effect": "ask" },
+    { "action": "shell", "resource": "*rg *--pre*", "effect": "ask" },
+    { "action": "shell", "resource": "fd *-x*", "effect": "ask" },
+    { "action": "shell", "resource": "fd *-X*", "effect": "ask" },
+    { "action": "shell", "resource": "git *--output*", "effect": "ask" },
+    { "action": "shell", "resource": "echo *>*", "effect": "ask" },
+    { "action": "shell", "resource": "git push --force*", "effect": "deny" },
+    { "action": "shell", "resource": "git push -f*", "effect": "deny" },
+    { "action": "shell", "resource": "git reset --hard*", "effect": "deny" },
+    { "action": "shell", "resource": "rm -rf*", "effect": "deny" },
+    { "action": "shell", "resource": "*--dangerously-skip-permissions*", "effect": "deny" },
+    { "action": "shell", "resource": "*--no-verify*", "effect": "deny" }
+  ]
 }
